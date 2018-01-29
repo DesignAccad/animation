@@ -1,0 +1,185 @@
+/* this is where all of your CSS styles go */
+
+html,body {
+	width: 100%;
+	height: 100%;
+}
+
+#container{
+
+  width: 1000px;
+	height: 200px;
+	position: relative;
+	left: 50%;
+	top: 48%; /* for optical centering */
+}
+
+
+.mono {
+	font-family: 'oswald';
+	font-size: 4em;
+	float: left;
+	margin-left: 5px;
+}
+
+@keyframes letter_fade {
+	0% {opacity: 0; }
+	100% { opacity: 1; }
+}
+
+@keyframes letter_move {
+
+  0%, 100% 	 {top: 0px; left:0px;}
+	25% 	 	{top: -150px; left: 0px;}
+	50%		  {top:-150px; left: 300px;}
+	75% 		{top:300px; left: 300px;}
+
+}
+
+@keyframes letter_stationary {
+
+  0%, 100% 	 {font-size: 50px}
+
+}
+
+
+@keyframes letter_move2 {
+	0%, 100%  {top: 0px;}
+	50% {top:-150px;}
+
+}
+
+
+@keyframes letter_up_left {
+	0% {top: 0px; left: 0px}
+	50% {top:-30px; left: -32px}
+  100% { top:0px; left:-32px}
+}
+
+@keyframes letter_up_left2 {
+	0% {top: 0px; left: 0px}
+	50% {top:-30px; left: -32px}
+  100% { top:0px; left:-32px}
+}
+
+@keyframes letter_down_left {
+  0% {top: 0px; left: 0px}
+  50% {top:-30px; left: -32px}
+  100% { top:0px; left:-32px}
+}
+
+@keyframes letter_down_right {
+	0%  {top: 0px; right: 0px}
+	50% {top: 30px; right: -60px}
+  100% {top: 0px; right: -60px}
+}
+
+@keyframes letter_down_right2 {
+	0%  {top: 0px; right: 0px}
+	50% {top: 30px; right: -30px}
+  100% {top: 0px; right: -30px}
+}
+
+@keyframes letter_up_right {
+	0%, 100%  {top: 0px;}
+	50% {top:-150px;}
+
+}
+
+@keyframes letter_up_right2 {
+	0%  {top: 0px; right: 0px}
+	50% {top: -30px; right: -32px}
+  100% {top: 0px; right: -32px}
+}
+
+@-webkit-keyframes grow {
+	0% 	{ -webkit-transform: rotate(0deg); width: 0px; height: 0px; border-radius: 100%; opacity: 1; }
+	20%	{ -webkit-transform: rotate(0deg); width: 100px; height: 100px; border-radius: 100%; opacity: 1; }
+	60%	{ -webkit-transform: rotate(0deg); width: 200px; height: 200px; border-radius: 100%; opacity: 1; }
+	80% 	{ -webkit-transform: rotate(0deg); width: 300px; height: 300px; opacity: 1;  }
+	100% 	{ -webkit-transform: rotate(0deg); width: 400px; height: 400px; opacity: 1;}
+}
+
+#i1 {
+  position: relative;
+
+}
+
+#i2 {
+  animation: letter_up_left 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+  animation-delay: 1s;
+}
+
+#n1 {
+  position: relative;
+
+}
+#n2 {
+	animation: letter_up_right2 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+#l1 {
+	animation: letter_down_right 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+#l2 {
+  position: relative infinite alternate;
+  animation-delay: 1s;
+
+}
+
+#t1 {
+  animation: letter_up_left 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+#t2 {
+  position: relative;
+
+}
+#e1 {
+  animation: letter_up_left 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+
+#e2 {
+	animation: letter_down_left 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+#g {
+  animation: letter_down_right2 5s infinite alternate;
+	animation-fill-mode: forwards;
+	animation-delay: 1s;
+  position: relative;
+
+}
+
+#shrinkingcircle{
+  width: 0px;
+  height: 0px;
+  border-radius: 100%;
+  margin-left: -20px;
+  margin-top: -150px;
+  background-color: yellow;
+  position: relative;
+  z-index: -1;
+  animation: grow linear 5s infinite alternate;
+  animation-delay: 1s;
+}
